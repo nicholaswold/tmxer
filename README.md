@@ -15,11 +15,13 @@ tmxer breaks down TMX maps into their base components, allowing you to easily ac
 ## How do I work this crazy thing?
 
 ```
-pip3 install tmxer
+python setup.py install
 ```
 
 ```
 from tmxer.map import Map
+import xml.etree.ElementTree as ET
+
 Map.frompath(filepath)
 # or
 Map(ET.parse(filepath))
@@ -40,7 +42,7 @@ See? Simple.
 
 ## How do I learn more?
 
-Documentation will be located in the `/docs` folder, and will later be hosted externally. Until then, the [TMX spec](https://github.com/bjorn/tiled/wiki/TMX-Map-Format) is very helpful, as tmxer is designed to use the same namespace.
+Documentation will be located in the `/docs` folder, and will later be hosted externally. Until then, the [TMX spec](https://github.com/bjorn/tiled/wiki/TMX-Map-Format) is very helpful, as tmxer is designed to use the same namespaces.
 
 
 ## How do I help?
