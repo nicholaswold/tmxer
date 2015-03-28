@@ -20,7 +20,6 @@ python setup.py install
 
 ```
 from tmxer.map import Map
-import xml.etree.ElementTree as ET
 
 level = Map(filepath)
 ```
@@ -36,6 +35,22 @@ for tileset in level.tilesets:
 ```
 
 See? Simple.
+
+What if you wanted to work in Pyglet?
+
+```
+from tmxer.map import PygletMap
+
+level = PygletMap(filepath)
+window = pyglet.window.Window(640, 480)
+
+@window.event
+def on_draw():
+    window.clear()
+    level.draw()
+```
+
+You can even extend objectgroups to do physics with something like PyMunk!
 
 
 ## How do I learn more?

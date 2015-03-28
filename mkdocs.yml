@@ -1,0 +1,7 @@
+site_name: tmxer
+pages:
+  - [index.md, Home]
+  - [user-guide.md, User Documentation]
+  - [dev-guide.md, Developer Documentation]
+  - [reference.md, Reference]
+theme: readthedocs
