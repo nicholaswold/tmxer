@@ -4,4 +4,5 @@ pages:
   - [user-guide.md, User Documentation]
   - [dev-guide.md, Developer Documentation]
   - [reference.md, Reference]
+  - [changelog.md, Changelog]
 theme: readthedocs

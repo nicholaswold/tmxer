@@ -61,3 +61,8 @@ Documentation will be located in the `/docs` folder, and will later be hosted ex
 ## How do I help?
 
 If you find the tmxer is _too_ simple for you, and lacking features, file an issue here. Alternatively, fork it. Please include tests. Benchmarks too if applicable. Utility scripts, helping tmxer play nice with other frameworks, are always welcome.
+
+
+## Licensing
+
+See the introduction in docs/ for details, but tmxer is distributed under the WTFPL license.
