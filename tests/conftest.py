@@ -1,4 +1,4 @@
-from tmxer.map import Map
+from tmxer.map import *
 import xml.etree.ElementTree as ET
 import os
 import pytest
@@ -8,11 +8,9 @@ def map_path():
     return os.path.join(os.getcwd() + '/../tests/test.tmx')
 
 @pytest.fixture(scope='session')
-def basic_map_file(map_path):
-    """Returns a file object that we can pass to create a Map"""
-    return Map.frompath(map_path)
+def basic_map(map_path):
+    return Map(map_path)
 
 @pytest.fixture(scope='session')
-def basic_map(map_path):
-    """Helper function for my convenience"""
-    return Map(ET.parse(map_path))
+def pyglet_map(map_path):
+    return PygletMap(map_path)

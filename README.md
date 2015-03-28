@@ -22,15 +22,13 @@ python setup.py install
 from tmxer.map import Map
 import xml.etree.ElementTree as ET
 
-Map.frompath(filepath)
-# or
-Map(ET.parse(filepath))
+level = Map(filepath)
 ```
 
 That's it. tmxer breaks down the TMX file into its own classes, which can then be navigated and accessed in a sane fashion.
 
 ```
-level = Map.frompath(filepath)
+level = Map(filepath)
 
 # Let's iterate over our tilesets
 for tileset in level.tilesets:
